@@ -10,6 +10,20 @@ public class BotMap {
 	public int[] botPosition;
 	public char[][] board;
 	
+	public BotMap() {
+		super();
+	}
+
+	public BotMap(int height, int width, int amountOfDirt, int[] botPosition,
+			char[][] board) {
+		super();
+		this.height = height;
+		this.width = width;
+		this.amountOfDirt = amountOfDirt;
+		this.botPosition = botPosition;
+		this.board = board;
+	}
+
 	public String[] asStringArray(){
 		String[] rv = new String[height*4];
 		rv[0] = new Integer(botPosition[0]).toString();
